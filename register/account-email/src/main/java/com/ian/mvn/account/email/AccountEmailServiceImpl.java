@@ -13,7 +13,7 @@ public class AccountEmailServiceImpl implements AccountEmailService{
 	private String systemEmail;
 
 	public void sendMail(String to, String subject, String htmlText)
-		throws AcccountEmailException{
+		throws AccountEmailException{
 
 		try{
 			MimeMessage msg = javaMailSender.createMimeMessage();
@@ -27,7 +27,7 @@ public class AccountEmailServiceImpl implements AccountEmailService{
 			javaMailSender.send(msg);
 
 		}catch(MessagingException e){
-			throw new AcccountEmailException("Failed to send mail.", e);
+			throw new AccountEmailException("Failed to send mail.", e);
 		}
 	}
 
