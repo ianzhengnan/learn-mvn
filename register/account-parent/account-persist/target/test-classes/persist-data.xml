@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<account-persist> 
+  <accounts>
+    <account>
+      <id>ian</id>
+      <name>Ian Zheng</name>
+      <email>ian.zheng@sap.com</email>
+      <password>1234567</password>
+      <activated>true</activated>
+    </account>
+  </accounts> 
+</account-persist>
